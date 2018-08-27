@@ -1,3 +1,9 @@
+"""
+Basic program to keep a budget. Not much functionality yet.
+Able to open/create/save a "project" with categories and a budget for those categories.
+Uses .json files for save data.
+"""
+
 __version__ = '2.0.0'
 __author__ = 'Martin Schlüter'
 
@@ -57,6 +63,7 @@ class BudgetApp:
         self.initial_window()
 
     def initial_window(self):
+        """Define the initial window."""
         self.initial_page = True
         intro = """Thank you for using this program!
 Create or open a new project.
@@ -68,11 +75,13 @@ Warning:
         self.intro_label.pack(side=BOTTOM)
        
     def open_file(self):
+        """Open a project."""
         self.project_name = askopenfilename(filetypes=[('Project file', '*.json')])
         if self.project_name:
             self.load_data()
         
     def new_file(self):
+        """Create a new project."""
         self.project_name = 'placeholder'
         self.load_data()
            
@@ -85,6 +94,7 @@ Warning:
         self.category_frame = Frame(self.parent)
         self.category_frame.pack()
         
+        # Empty entry containers and start fresh
         self.categories = {}
         self.categories_budget = {}
         self.new_categories = {}
@@ -93,6 +103,7 @@ Warning:
         self.minus_to_entry_dict = {}
         self.remove_entry_dict = {}
         
+        # Collects the save data if any from the save file
         save_data = self.open_saved_project()
         
         total_label = Label(self.category_frame, text='Total (€):')
@@ -108,6 +119,7 @@ Warning:
         category_label.grid(row=1, column=1)
         category_budget_label.grid(row=1, column=2)
         
+        # Create the Category, Category Budget entries and a remove button
         i = 0
         for (ix, label) in enumerate(save_data['category']): 
             self.category = Entry(self.category_frame)
@@ -116,15 +128,7 @@ Warning:
        
             self.category_budget = Entry(self.category_frame)
             self.category_budget.grid(row=ix + 2, column=2)
-            self.categories_budget[self.number_entries] = self.category_budget
-            
-            # self.add_to_entry_button = Button(self.category_frame, text="+", command=lambda number=self.number_entries: self.add_to_entry_func(number))
-            # self.add_to_entry_button.grid(row=ix + 2, column=3)
-            # self.add_to_entry_dict[self.number_entries] = self.add_to_entry_button
-            
-            # self.minus_to_entry_button = Button(self.category_frame, text="-", command=lambda number=self.number_entries: self.minus_to_entry_func(number))
-            # self.minus_to_entry_button.grid(row=ix + 2, column=4)
-            # self.minus_to_entry_dict[self.number_entries] = self.minus_to_entry_button
+            self.categories_budget[self.number_entries] = self.category_budget           
             
             self.remove_entry_button = Button(self.category_frame, text="Remove", command=lambda number=self.number_entries: self.remove_entry_func(number))
             self.remove_entry_button.grid(row=ix + 2, column=3)
@@ -132,6 +136,7 @@ Warning:
             self.number_entries += 1
             i += 1
         
+        # Fill in the entries with the data of the saved file
         a = 0
         aa = 0
         for field in self.categories:
@@ -143,11 +148,13 @@ Warning:
             self.categories_budget[field].delete(0, END)
             self.categories_budget[field].insert(0, save_data['category budget'][aa])
             aa += 1
-             
+        
+        # Create a + button to add more categories
         self.plus = Button(self.category_frame, text='+', command=self.new_data)
         self.plus.grid(row=self.number_entries + 3, column=3)
         
     def new_data(self):
+        """Create new Category, new Category Budget entries and new remove button."""
         self.new_category = Entry(self.category_frame)
         self.new_category.grid(row=self.number_entries + self.new_number_entries + 3, column=1)
         self.new_categories[self.new_number_entries] = self.new_category
@@ -155,15 +162,7 @@ Warning:
         self.new_category_budget = Entry(self.category_frame)
         self.new_category_budget.grid(row=self.number_entries + self.new_number_entries + 3, column=2)
         self.new_categories_budget[self.new_number_entries] = self.new_category_budget
-        
-        # self.add_to_entry_button = Button(self.category_frame, text="+", command=lambda number=self.number_entries: self.add_to_entry_func(number))
-        # self.add_to_entry_button.grid(row=self.number_entries + self.new_number_entries + 3, column=3)
-        # self.add_to_entry_dict[self.new_number_entries] = self.add_to_entry_button
-        
-        # self.minus_to_entry_button = Button(self.category_frame, text="-", command=lambda number=self.number_entries: self.minus_to_entry_func(number))
-        # self.minus_to_entry_button.grid(row=self.number_entries + self.new_number_entries + 3, column=4)
-        # self.minus_to_entry_dict[self.new_number_entries] = self.minus_to_entry_button
-    
+               
         self.remove_entry_button = Button(self.category_frame, text="Remove", command=lambda a=self.number_entries, b=self.new_number_entries: self.remove_entry_func2(a + b, b))
         self.remove_entry_button.grid(row=self.number_entries + self.new_number_entries + 3, column=3)
         self.remove_entry_dict[self.number_entries + self.new_number_entries] = self.remove_entry_button       
@@ -171,27 +170,10 @@ Warning:
         self.new_number_entries += 1
         self.plus.destroy()
         self.plus = Button(self.category_frame, text='+', command=self.new_data)
-        self.plus.grid(row=self.number_entries + self.new_number_entries + 3, column=3)
-    
-    # def add_to_entry_func(self, number):
-        # try:      
-            # var = IntVar()
-            # var.set(int(self.categories_budget[number].get()) + 
-                        # askinteger("Add", "How much do you want to add?") )
-            # self.categories_budget[number].config(textvariable=var)
-        # except TypeError:
-            # pass
-            
-    # def minus_to_entry_func(self, number):
-        # try:      
-            # var = IntVar()
-            # var.set(int(self.categories_budget[number].get()) + 
-                        # askinteger("Subtract", "How much do you want to subtract?"))
-            # self.categories_budget[number].config(textvariable=var)
-        # except TypeError:
-            # pass
+        self.plus.grid(row=self.number_entries + self.new_number_entries + 3, column=3)   
     
     def remove_entry_func(self, number):
+        """Delete the row that the remove button is on."""
         self.categories[number].destroy()
         del(self.categories[number])
         self.categories_budget[number].destroy()
@@ -200,6 +182,10 @@ Warning:
         del(self.remove_entry_dict[number])
         
     def remove_entry_func2(self, number, number2):
+        """
+        Delete the row that the remove button is on 
+        for any new category fields.
+        """
         self.new_categories[number2].destroy()
         del(self.new_categories[number2])
         self.new_categories_budget[number2].destroy()
@@ -208,7 +194,7 @@ Warning:
         del(self.remove_entry_dict[number])
     
     def delete_window(self):
-        """This function is run when the X button is pressed."""
+        """This function is run when the X button of the window is pressed."""
         if not self.initial_page:
             result = askyesnocancel("Exit program?", "You are about to exit the "
                      "program. Do you want to save first?")
@@ -278,6 +264,10 @@ Warning:
                     showerror('Error', 'You have used up too much of your budget total!')
     
     def gen_pie_chart(self):
+        """
+        Generate a pie chart with the filled in entries as data 
+        and render it in the default browser.
+        """
         if not self.initial_page:
             pie_chart = pygal.Pie()
             pie_chart.title = f'{self.project_name} | total:{self.total.get()}'
@@ -292,6 +282,10 @@ Warning:
             showerror('Error', 'No file opened!')
     
     def open_saved_project(self):
+        """
+        Load the saved if a project_name is given
+        or load placeholder data.
+        """
         try:
             f = open(self.project_name)
         except FileNotFoundError:
@@ -307,4 +301,4 @@ if __name__ == '__main__':
     root = Tk()
     BudgetApp(root)
     root.mainloop()
-
+    
