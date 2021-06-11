@@ -11,3 +11,5 @@ Things i created while learning Python.
 * [Weather Data Rotterdam 2017-2018](Data%20visualization/rotterdam_weer_2017-2018.png) Data visualization image
   - Source code [Weather graph of Rotterdam in 2017-2018](Data%20visualization/rotterdam_weerdata.py)
   - Weather data used [KNMI_2017-01-01__2018-18-06](Data%20visualization/KNMI_2017-01-01__2018-18-06.csv)
+* [Gaia Project (Board Game)](https://github.com/Seawolf159/Gaia-Project)
+  - Attempt to recreate the board game Gaia Project for PC
