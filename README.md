@@ -4,5 +4,8 @@
   ![Planetary institute 3d blender image](https://github.com/Seawolf159/Gaia-Project/blob/master/Images/Raw%20renders/Planetary%20Institute.png)
 
 * DYMO Label updater
+  - Project i made for work. It creates DYMO Labels from an Excel file with product numbers and descriptions.
+  ### Program layout
+  ![Program layout](https://github.com/Seawolf159/CV/blob/master/Images/DYMO%20Label%20Updater.png)
 
 * Work order filer
