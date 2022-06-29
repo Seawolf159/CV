@@ -6,6 +6,7 @@
 * DYMO Label updater
   - Project i made for work. It creates DYMO Labels from an Excel file with product numbers and descriptions.
   - Program layout
-  ![Program layout](https://github.com/Seawolf159/CV/blob/master/Images/DYMO%20Label%20Updater.png)
+
+    ![Program layout](https://github.com/Seawolf159/CV/blob/master/Images/DYMO%20Label%20Updater.png)
 
 * Work order filer
