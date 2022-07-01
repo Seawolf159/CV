@@ -12,7 +12,7 @@
 
     See [releases](https://github.com/Seawolf159/CV/releases/tag/Showcase-2) for program download
 
-    ![DYMO Label Updater program layout](https://github.com/Seawolf159/CV/releases/tag/Showcase-1)
+    ![DYMO Label Updater program layout](https://github.com/Seawolf159/CV/blob/master/Images/DYMO%20Label%20Updater.png)
 
 * <img src="https://github.com/Seawolf159/CV/blob/master/Images/icon2.png" width="15" height="15"> WO Filer (Work Order Filer)
   - Program that looks for a certain number format in a scanned pdf file with multiple double sided scans of work orders using OCR and stores individual front and back pages in a location of choice using the number it found.
