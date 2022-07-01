@@ -28,3 +28,6 @@
 
 
 ### For Android/iOS
+* Program to keep track of start and end times and to automatically subtract breaks from the total time
+
+  ![Order Time program layout](https://github.com/Seawolf159/CV/blob/master/Images/Order%20Time.jpg)
