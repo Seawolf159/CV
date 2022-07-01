@@ -10,7 +10,7 @@
 * <img src="https://github.com/Seawolf159/CV/blob/master/Images/icon1.png" width="15" height="15"> DYMO Label Updater
   - Program that creates DYMO Label .label files from an Excel file with product numbers and descriptions.
 
-    See [releases](https://github.com/Seawolf159/CV/releases/tag/Showcase-2) for program download
+    See [releases](https://github.com/Seawolf159/CV/releases/tag/Showcase-1) for program download
 
     ![DYMO Label Updater program layout](https://github.com/Seawolf159/CV/blob/master/Images/DYMO%20Label%20Updater.png)
 
