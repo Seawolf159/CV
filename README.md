@@ -7,7 +7,7 @@
 
 ## Work related
 ### For Windows
-* <img src="https://github.com/Seawolf159/CV/blob/master/DYMO%20Label%20Updater/Distribution/icon.png" width="15" height="15"> DYMO Label Updater
+* <img src="https://github.com/Seawolf159/CV/blob/master/DYMO%20Label%20Updater/Distribution/icon.png" width="20" height="20"> DYMO Label Updater
   - Creates DYMO Labels from an Excel file with product numbers and descriptions.
 
     ![Program layout](https://github.com/Seawolf159/CV/blob/master/Images/DYMO%20Label%20Updater.png)
