@@ -14,7 +14,7 @@
 
     ![Dymo label example 1](https://github.com/Seawolf159/CV/blob/master/Images/Dymo%20Label%201.png)
 
-    ![Dymo label example 2](https://github.com/Seawolf159/CV/blob/master/Images/Dymo%20Label%201.png)
+    ![Dymo label example 2](https://github.com/Seawolf159/CV/blob/master/Images/Dymo%20Label%202.png)
 
     See [releases](https://github.com/Seawolf159/CV/releases/tag/Showcase-1) for program download
 
