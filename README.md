@@ -1,6 +1,6 @@
 # Projects
 * [Personal](https://github.com/Seawolf159/CV#personal)
-  * [Gaia Project](https://github.com/Seawolf159/CV#gaia-project)
+  * [Gaia Project](https://github.com/Seawolf159/CV#gaia-project-board-game-github-link)
 * [Work related](https://github.com/Seawolf159/CV#work-related)
   * [For Windows](https://github.com/Seawolf159/CV#for-windows)
     * [DYMO Label Updater](https://github.com/Seawolf159/CV#dymo-label-updater)
