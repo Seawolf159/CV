@@ -26,7 +26,7 @@ Program that creates DYMO Label .label files from an Excel file with product num
 
   ![Dymo label example 2](https://github.com/Seawolf159/CV/blob/master/Images/Dymo%20label%202.png)
 
-  See [releases](https://github.com/Seawolf159/CV/releases/tag/Showcase-1) for program download
+  See [releases](https://github.com/Seawolf159/CV/releases/tag/Showcase-1) for program download.
 
   [Source code](https://github.com/Seawolf159/CV/tree/master/DYMO%20Label%20Updater/Source)
 
@@ -36,10 +36,18 @@ Program that looks for a certain number format in a scanned pdf file with multip
 
   ![WO Filer program layout](https://github.com/Seawolf159/CV/blob/master/Images/WO%20Filer.png)
 
-  See [releases](https://github.com/Seawolf159/CV/releases/tag/Showcase-2) for program download
+  See [releases](https://github.com/Seawolf159/CV/releases/tag/Showcase-2) for program download.
 
   [Source code](https://github.com/Seawolf159/CV/tree/master/WO%20Filer/Source)
 
+#### WoNum (Work Order number)
+Program to print unique numbered work orders.
+
+  ![WoNum program layout](https://github.com/Seawolf159/CV/blob/master/Images/WoNum.png)
+
+  See [releases](https://github.com/Seawolf159/CV/releases/tag/Showcase-3) for program download.
+
+  [Source code](https://github.com/Seawolf159/CV/tree/master/WoNum/Source)
 
 ### For Android/iOS
 #### Order Time

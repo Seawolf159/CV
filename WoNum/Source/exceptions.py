@@ -1,0 +1,2 @@
+class ConfigCategoryNotSetUpError(Exception):
+    pass
