@@ -32,6 +32,10 @@
 
 
 ### For Android/iOS
-* Program to keep track of start and end times and to automatically subtract breaks from the total time
+* Program to keep track of start and end times and to automatically subtract breaks from the total time.
 
   ![Order Time program layout](https://github.com/Seawolf159/CV/blob/master/Images/Order%20Time.jpg)
+
+* Program to calculate material out-life. Program was made with Flutter and is available for Windows and Android with one code base.
+
+  ![Out-Life Calculator layout](https://github.com/Seawolf159/CV/blob/master/Images/Out-Life%20Calculator.png)
