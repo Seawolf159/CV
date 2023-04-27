@@ -5,6 +5,7 @@
   * [For Windows](https://github.com/Seawolf159/CV#for-windows)
     * [DYMO Label Updater](https://github.com/Seawolf159/CV#dymo-label-updater)
     * [WO Filer (Work Order Filer)](https://github.com/Seawolf159/CV#wo-filer-work-order-filer)
+    * [WoNum (Work Order number)](https://github.com/Seawolf159/CV#wonum-work-order-number)
   * [For Android/iOS](https://github.com/Seawolf159/CV#for-androidios)
     * [Order Time](https://github.com/Seawolf159/CV#order-time)
     * [Out-Life Calculator](https://github.com/Seawolf159/CV#out-life-calculator)
@@ -17,7 +18,7 @@ Attempt to recreate the board game ["Gaia Project"](https://images.zmangames.com
 
 ## Work related
 ### For Windows
-#### DYMO Label Updater
+* #### DYMO Label Updater
 Program that creates DYMO Label .label files from an Excel file with product numbers and descriptions.
 
   ![DYMO Label Updater program layout](https://github.com/Seawolf159/CV/blob/master/Images/DYMO%20Label%20Updater.png)
@@ -31,7 +32,7 @@ Program that creates DYMO Label .label files from an Excel file with product num
   [Source code](https://github.com/Seawolf159/CV/tree/master/DYMO%20Label%20Updater/Source)
 
 
-#### WO Filer (Work Order Filer)
+* #### WO Filer (Work Order Filer)
 Program that looks for a certain number format in a scanned pdf file with multiple double sided scans of work orders using OCR and stores individual front and back pages in a location of choice using the number it found.
 
   ![WO Filer program layout](https://github.com/Seawolf159/CV/blob/master/Images/WO%20Filer.png)
@@ -40,7 +41,7 @@ Program that looks for a certain number format in a scanned pdf file with multip
 
   [Source code](https://github.com/Seawolf159/CV/tree/master/WO%20Filer/Source)
 
-#### WoNum (Work Order number)
+* #### WoNum (Work Order number)
 Program to print unique numbered work orders.
 
   ![WoNum program layout](https://github.com/Seawolf159/CV/blob/master/Images/WoNum.png)
