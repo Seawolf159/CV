@@ -7,7 +7,7 @@
 
 ## Work related
 ### For Windows
-* <img src="https://github.com/Seawolf159/CV/blob/master/Images/icon1.png" width="15" height="15"> DYMO Label Updater
+* DYMO Label Updater
   - Program that creates DYMO Label .label files from an Excel file with product numbers and descriptions.
 
     ![DYMO Label Updater program layout](https://github.com/Seawolf159/CV/blob/master/Images/DYMO%20Label%20Updater.png)
@@ -21,7 +21,7 @@
     [Source code](https://github.com/Seawolf159/CV/tree/master/DYMO%20Label%20Updater/Source)
 
 
-* <img src="https://github.com/Seawolf159/CV/blob/master/Images/icon2.png" width="15" height="15"> WO Filer (Work Order Filer)
+* WO Filer (Work Order Filer)
   - Program that looks for a certain number format in a scanned pdf file with multiple double sided scans of work orders using OCR and stores individual front and back pages in a location of choice using the number it found.
 
     ![WO Filer program layout](https://github.com/Seawolf159/CV/blob/master/Images/WO%20Filer.png)
